@@ -1,37 +1,11 @@
 import Image from 'next/image'
 import { FileText, Clock, Shield, Upload, CheckCircle, TrendingUp } from 'lucide-react'
+import Navigation from '@/components/Navigation'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 to-transparent">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Image 
-              src="/atamai-light.png" 
-              alt="Atamai" 
-              width={120} 
-              height={40}
-              className="h-10 w-auto"
-            />
-            <div className="flex items-center gap-6">
-              <a 
-                href="/updates" 
-                className="text-white/70 hover:text-white transition-colors text-sm hidden sm:block"
-              >
-                Updates
-              </a>
-              <a 
-                href="#waitlist" 
-                className="btn-primary text-sm"
-              >
-                Join Waitlist
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -201,7 +175,7 @@ export default function Home() {
                     <CheckCircle className="w-5 h-5 text-green-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-1">80+ hours → Under 3 minutes</h3>
+                    <h3 className="text-lg font-semibold text-white mb-1">80+ hours → Under 30 minutes</h3>
                     <p className="text-white/60">Upload once, populate everywhere. No more re-entering the same data.</p>
                   </div>
                 </div>
@@ -211,7 +185,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-1">Multi-framework compliance</h3>
-                    <p className="text-white/60">NZFAP, NZFAP+, regional requirements — check against them all at once.</p>
+                    <p className="text-white/60">Local, regional, national, and international requirements — check against them all at once.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -456,7 +430,7 @@ export default function Home() {
               </span>
             </div>
             <div className="text-white/40 text-sm">
-              © {new Date().getFullYear()} Atamai. Built in New Zealand.
+              © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
             </div>
           </div>
         </div>

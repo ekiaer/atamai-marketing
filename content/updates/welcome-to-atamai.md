@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Atamai"
-date: "2024-12-16"
+date: "2025-12-10"
 excerpt: "We're building something new for New Zealand farmers - a smarter way to handle compliance."
 ---
 
@@ -22,10 +22,12 @@ Atamai uses AI to read your existing documents - starting with your FEP - and au
 - Exactly what gaps remain
 - Clear steps to close those gaps
 
+And of course, we can go the other way and create your FEP. The FEP should be a living, breathing snapshot of what you are doing to steward your land, shareable with the click of a button.
+
 ## What's Next
 
 We're currently building our pilot program with select New Zealand farms. If you're interested in early access, [join our waitlist](/#waitlist).
 
 More updates coming soon.
 
-*- The Atamai Team*
+_- The Atamai Team_

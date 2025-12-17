@@ -1,10 +1,8 @@
 ---
 title: "Why Farmers Should Own Their Data"
-date: "2024-12-10"
+date: "2025-12-16"
 excerpt: "Your farm data is valuable. Here's why you should control who accesses it - and benefit when others do."
 ---
-
-# Why Farmers Should Own Their Data
 
 Farm data has become incredibly valuable. Processors want it for traceability. Banks want it for lending decisions. Retailers want it to tell provenance stories. Technology companies want it to build products.
 
@@ -32,7 +30,7 @@ We're not just building a compliance tool. We're building infrastructure that pu
 
 Atamai acts as a secure vault for your farm data. You maintain a single, comprehensive farm profile (we call it the 5Ps: Property, Practices, Products, Performance, People).
 
-When a processor, bank, or retailer needs verified farm data, they request access through Atamai. You approve (or deny) each request. If you share data commercially, you receive 70% of the access fee.
+When a processor, bank, or retailer needs verified farm data, they request access through Atamai. You approve (or deny) each request. If you share data commercially, you receive the access fee.
 
 Your data. Your control. Your value.
 
@@ -40,4 +38,4 @@ Your data. Your control. Your value.
 
 We're building Atamai with early-adopter farmers who share this vision. [Join the waitlist](/#waitlist) to be part of shaping the future of farm data ownership.
 
-*- Erik, Founder*
+_- Erik, Founder_

@@ -1,45 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, Calendar } from 'lucide-react'
+import { Calendar } from 'lucide-react'
 import { getAllUpdates } from '@/lib/updates'
+import Navigation from '@/components/Navigation'
 
 export default function UpdatesPage() {
   const updates = getAllUpdates()
 
   return (
     <main className="min-h-screen bg-atamai-darker">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-atamai-darker/80 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <Image 
-                src="/atamai-light.png" 
-                alt="Atamai" 
-                width={120} 
-                height={40}
-                className="h-10 w-auto"
-              />
-            </Link>
-            <Link 
-              href="/#waitlist" 
-              className="btn-primary text-sm"
-            >
-              Join Waitlist
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       <div className="max-w-3xl mx-auto px-6 pt-32 pb-20">
-        <Link 
-          href="/"
-          className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to home
-        </Link>
-
         <h1 className="text-4xl font-bold text-white mb-4">Updates</h1>
         <p className="text-xl text-white/60 mb-12">
           News and progress from the Atamai team.
@@ -97,7 +69,7 @@ export default function UpdatesPage() {
               </span>
             </div>
             <div className="text-white/40 text-sm">
-              © {new Date().getFullYear()} Atamai. Built in New Zealand.
+              © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
             </div>
           </div>
         </div>

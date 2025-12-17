@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar } from 'lucide-react'
 import { marked } from 'marked'
 import { getAllUpdateSlugs, getUpdateBySlug } from '@/lib/updates'
 import { notFound } from 'next/navigation'
+import Navigation from '@/components/Navigation'
 
 // Generate static paths for all updates
 export async function generateStaticParams() {
@@ -12,8 +13,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for each update
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const update = getUpdateBySlug(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const update = getUpdateBySlug(slug)
   if (!update) {
     return { title: 'Update Not Found | Atamai' }
   }
@@ -23,8 +25,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function UpdatePage({ params }: { params: { slug: string } }) {
-  const update = getUpdateBySlug(params.slug)
+export default async function UpdatePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const update = getUpdateBySlug(slug)
 
   if (!update) {
     notFound()
@@ -35,28 +38,7 @@ export default function UpdatePage({ params }: { params: { slug: string } }) {
 
   return (
     <main className="min-h-screen bg-atamai-darker">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-atamai-darker/80 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <Image 
-                src="/atamai-light.png" 
-                alt="Atamai" 
-                width={120} 
-                height={40}
-                className="h-10 w-auto"
-              />
-            </Link>
-            <Link 
-              href="/#waitlist" 
-              className="btn-primary text-sm"
-            >
-              Join Waitlist
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       <article className="max-w-3xl mx-auto px-6 pt-32 pb-20">
         <Link 
@@ -131,7 +113,7 @@ export default function UpdatePage({ params }: { params: { slug: string } }) {
               </span>
             </div>
             <div className="text-white/40 text-sm">
-              © {new Date().getFullYear()} Atamai. Built in New Zealand.
+              © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
             </div>
           </div>
         </div>
