@@ -34,7 +34,7 @@ export default function ContactPage() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            action="/contact/thank-you"
+            action="/contact/thank-you/"
             className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
           >
             {/* Hidden field for Netlify */}
