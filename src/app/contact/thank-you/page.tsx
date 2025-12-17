@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function ContactThankYouPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-atamai-darker">
       <Navigation />
 
       {/* Thank You Message */}
