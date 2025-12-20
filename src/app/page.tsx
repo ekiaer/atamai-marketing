@@ -246,7 +246,7 @@ export default function Home() {
               href="/updates/welcome-to-atamai"
               className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 hover:bg-white/10 transition-all group"
             >
-              <div className="text-white/40 text-sm mb-3">December 16, 2024</div>
+              <div className="text-white/40 text-sm mb-3">December 10, 2025</div>
               <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
                 Welcome to Atamai
               </h3>
@@ -259,7 +259,7 @@ export default function Home() {
               href="/updates/farmers-own-their-data"
               className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 hover:bg-white/10 transition-all group"
             >
-              <div className="text-white/40 text-sm mb-3">December 10, 2024</div>
+              <div className="text-white/40 text-sm mb-3">December 16, 2025</div>
               <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
                 Why Farmers Should Own Their Data
               </h3>
