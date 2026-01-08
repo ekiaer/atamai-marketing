@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation'
 const team = [
   {
     name: 'Erik Kiaer',
+    role: 'Co-founder',
     image: '/ek.png',
     bio: [
       'Erik Kiaer has driven billion-dollar outcomes by launching new ventures and scaling existing businesses across healthcare, professional services, automotive, and agricultural industries.',
@@ -14,12 +15,34 @@ const team = [
   },
   {
     name: 'Katie Gillingham',
+    role: 'Co-founder',
     image: '/kg.png',
     bio: [
       'Katie Gillingham works at the intersection of agriculture and technology, with a passion for wool and a deep connection to farming communities. She began her career in agribusiness with New Zealand Merino, later moving into RMA and rural auditing with the Department of Conservation.',
       'Retraining in software development, she returned to the wool sector at WoolWorks, where she now contributes to the farmer-first Atamai project.',
       'Katie is driven by a mission to reduce on-farm admin burdens through practical, sustainable digital solutions. Her work reflects a belief that agriculture should align with nature—empowering farmers, not overwhelming them.',
     ],
+  },
+  {
+    name: 'Henry Ferrier',
+    role: 'Co-founder',
+    image: '/hf.jpg',
+    bio: [
+      'Henry Ferrier oversees the Ferrier family technology investments, including Atamai. With a background in finance and accounting, he adds investment acumen to the team and will support how current and future investments in Atamai can drive long-term success for all stakeholders.',
+    ],
+  },
+]
+
+const advisors = [
+  {
+    name: 'John Rodwell',
+    image: '/jr.jpg',
+    bio: 'John Rodwell possesses extensive experience in the primary sector, encompassing both corporate finance and governance, as well as national science work that supports the sector. With a background in international business development and a commitment to initiatives aimed at industry improvement, John serves as a Co-Chair of the Te Taiao Steering Group and previously contributed to the Minister of Agriculture\'s Primary Sector Council.',
+  },
+  {
+    name: 'Rob Hewett',
+    image: '/rh.jpg',
+    bio: 'Rob Hewett is the Co-Chair of Silver Fern Farms Limited, Chair of Farmlands Co-operative Society Limited, New Zealand Woolscours Limited (Woolworks), Fern Energy Limited, Hilton Haulage Limited and Pioneer Energy Limited. Rob farms 10,000 sheep and beef stock units on a carbon positive breeding/finishing and forestry farm in South Otago. He won the Deloitte Top 200 Chair of the Year award in 2023.',
   },
 ]
 
@@ -43,16 +66,17 @@ export default function TeamPage() {
         </p>
       </section>
 
-      {/* Team Members */}
-      <section className="container mx-auto px-6 pb-24">
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      {/* Co-founders */}
+      <section className="container mx-auto px-6 pb-16">
+        <h2 className="text-2xl font-bold text-white/50 text-center mb-12">Co-founders</h2>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {team.map((member) => (
             <div
               key={member.name}
               className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
             >
               <div className="flex flex-col items-center text-center mb-6">
-                <div className="relative w-40 h-40 mb-6">
+                <div className="relative w-32 h-32 mb-4">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -60,15 +84,43 @@ export default function TeamPage() {
                     className="rounded-full object-cover border-4 border-green-500/30"
                   />
                 </div>
-                <h2 className="text-2xl font-bold text-white">{member.name}</h2>
+                <h3 className="text-xl font-bold text-white">{member.name}</h3>
               </div>
               <div className="space-y-4">
                 {member.bio.map((paragraph, index) => (
-                  <p key={index} className="text-white/70 leading-relaxed">
+                  <p key={index} className="text-white/70 leading-relaxed text-sm">
                     {paragraph}
                   </p>
                 ))}
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Advisors */}
+      <section className="container mx-auto px-6 pb-24">
+        <h2 className="text-2xl font-bold text-white/50 text-center mb-12">Advisors</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {advisors.map((advisor) => (
+            <div
+              key={advisor.name}
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+            >
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="relative w-28 h-28 mb-4">
+                  <Image
+                    src={advisor.image}
+                    alt={advisor.name}
+                    fill
+                    className="rounded-full object-cover border-4 border-white/20"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white">{advisor.name}</h3>
+              </div>
+              <p className="text-white/70 leading-relaxed text-sm">
+                {advisor.bio}
+              </p>
             </div>
           ))}
         </div>

@@ -84,10 +84,10 @@ export default function AboutPage() {
               and on-farm visits across New Zealand, from high country stations to dairy farms. Every feature reflects what farmers have told us they actually need, not what we assumed they might want.
             </p>
             <p>
-              The concept has been validated through multiple iterations of research and early partnerships with key industry players, including Woolworks. We've built relationships with major processors, cooperatives, and rural lenders who share our vision for reducing farmer burden while improving data quality.
+              The concept has been validated through multiple iterations of research and ongoing conversations with processors, cooperatives, and rural lenders who share our vision for reducing farmer burden while improving data quality.
             </p>
             <p>
-              Our governance framework is being developed in partnership with AGMARDT, ensuring the platform serves farmer interests first. Through AgritechNZ and the NZ Farm Assurance Program, we're connected to the broader agricultural technology ecosystem. And we've established relationships at both ministerial and civil service levels to help shape policy that supports, rather than burdens, farmers.
+              Our governance framework is being developed in partnership with AGMARDT, ensuring the platform serves farmer interests first. Through our broader team, we're connected to the agricultural technology ecosystem and have relationships at both ministerial and civil service levels.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
             Built by People Who Know the Problem
           </h2>
           <p className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-10">
-            Atamai was founded by Katie Gillingham, who brings a decade of agribusiness and compliance experience from her South Island high country farming background, and Erik Kiaer, who brings deep expertise in building and scaling complex data platforms. Together, they combine agricultural authenticity with technical capability.
+            Atamai is led by Katie Gillingham and Erik Kiaer. Katie brings a decade of agribusiness and compliance experience from her South Island high country farming background. Erik brings deep expertise in building and scaling complex data platforms. Together, they combine agricultural authenticity with technical capability.
           </p>
           <Link
             href="/team"
