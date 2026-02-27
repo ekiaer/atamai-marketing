@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import { Mail } from 'lucide-react'
 
@@ -10,18 +8,18 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-cream-50">
       <Navigation />
 
       {/* Hero */}
       <section className="container mx-auto px-6 pt-32 pb-16 text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 mb-6">
-          <Mail className="w-8 h-8 text-green-400" />
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-mint-500/20 mb-6">
+          <Mail className="w-8 h-8 text-mint-500" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-forest-800 mb-6 tracking-tight">
           Get in Touch
         </h1>
-        <p className="text-xl text-white/70 max-w-2xl mx-auto">
+        <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
           Have a question about Atamai? Want to learn more about how we can help simplify your farm compliance? We'd love to hear from you.
         </p>
       </section>
@@ -35,7 +33,7 @@ export default function ContactPage() {
             data-netlify="true"
             netlify-honeypot="bot-field"
             action="/contact/thank-you/"
-            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+            className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-warm"
           >
             {/* Hidden field for Netlify */}
             <input type="hidden" name="form-name" value="contact" />
@@ -49,7 +47,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-white font-medium mb-2">
+                <label htmlFor="name" className="block text-forest-800 font-medium mb-2">
                   Name
                 </label>
                 <input
@@ -63,7 +61,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-white font-medium mb-2">
+                <label htmlFor="email" className="block text-forest-800 font-medium mb-2">
                   Email
                 </label>
                 <input
@@ -77,7 +75,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-white font-medium mb-2">
+                <label htmlFor="subject" className="block text-forest-800 font-medium mb-2">
                   Subject
                 </label>
                 <select
@@ -96,7 +94,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-white font-medium mb-2">
+                <label htmlFor="message" className="block text-forest-800 font-medium mb-2">
                   Message
                 </label>
                 <textarea
@@ -118,32 +116,16 @@ export default function ContactPage() {
             </div>
           </form>
 
-          <p className="text-center text-white/40 text-sm mt-6">
+          <p className="text-center text-neutral-500 text-sm mt-6">
             We typically respond within 1-2 business days.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-12">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-4">
-              <Image
-                src="/atamai-light.png"
-                alt="Atamai"
-                width={100}
-                height={32}
-                className="h-8 w-auto opacity-60"
-              />
-              <span className="text-white/40 text-sm">
-                Farm compliance, simplified.
-              </span>
-            </div>
-            <div className="text-white/40 text-sm">
-              &copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
-            </div>
-          </div>
+      <footer className="bg-forest-800 border-t border-forest-700 py-8">
+        <div className="container mx-auto px-6 text-center text-cream-100/50">
+          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
         </div>
       </footer>
     </main>
