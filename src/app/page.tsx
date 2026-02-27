@@ -18,7 +18,7 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-forest-800/70 via-forest-800/50 to-forest-800" />
+          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-neutral-950/40 to-forest-800" />
         </div>
 
         {/* Hero Content */}
@@ -126,8 +126,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-tint-light rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Upload className="w-8 h-8 text-mint-500" />
+              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <Upload className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 1</div>
               <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Upload Your FEP</h3>
@@ -137,8 +137,8 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-tint-light rounded-lg flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-8 h-8 text-mint-500" />
+              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 2</div>
               <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">See Your Gaps</h3>
@@ -148,8 +148,8 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-tint-light rounded-lg flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-mint-500" />
+              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 3</div>
               <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Get Certified</h3>
