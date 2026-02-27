@@ -1,0 +1,6 @@
+Erik Kiaer has driven billion-dollar outcomes by launching new ventures and scaling existing businesses across healthcare, professional services, automotive, and agricultural industries.
+A sought-after innovation and growth strategist, he shares insights through keynote speeches and has been featured in the Wall Street Journal, Ad Age, Fast Company, and numerous books on design and innovation.
+Erik's mission: Building scalable businesses that create compelling customer experiences while delivering competitive advantage and economic value.
+
+Katie Gillingham works at the intersection of agriculture and technology, with a passion for wool and a deep connection to farming communities.She began her career in agribusiness with New Zealand Merino, later moving into RMA and rural auditing with the Department of Conservation. Retraining in software development, she returned to the wool sector at WoolWorks, where she now contributes to the farmer-first Atamai project.
+Katie is driven by a mission to reduce on-farm admin burdens through practical, sustainable digital solutions. Her work reflects a belief that agriculture should align with nature—empowering farmers, not overwhelming them.
