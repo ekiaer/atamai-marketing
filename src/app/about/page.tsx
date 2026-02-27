@@ -9,31 +9,31 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-cream-50">
       <Navigation />
 
       {/* Hero */}
       <section className="container mx-auto px-6 pt-32 pb-20 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-forest-800 mb-6 tracking-tight">
           Helping Farmers Get Back to Farming
         </h1>
-        <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-neutral-700 max-w-3xl mx-auto">
           Atamai is a farmer-first platform that transforms compliance from a burden into a business asset.
         </p>
       </section>
 
       {/* The Problem */}
-      <section className="py-20 bg-white/[0.02]">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             The Compliance Burden is Real
           </h2>
-          <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
               New Zealand farmers are spending between{' '}
-              <span className="text-green-400 font-semibold">4-6% of their farm revenue</span>{' '}
+              <span className="text-mint-500 font-semibold">4-6% of their farm revenue</span>{' '}
               on compliance alone. That's money that could be reinvested in the farm, in staff, or in the farmer's own wellbeing. Beyond the financial cost, farmers are dedicating upwards of{' '}
-              <span className="text-green-400 font-semibold">200 hours per year</span>{' '}
+              <span className="text-mint-500 font-semibold">200 hours per year</span>{' '}
               to managing audits, certifications, and paperwork—time that should be spent on the land.
             </p>
             <p>
@@ -47,20 +47,20 @@ export default function AboutPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="py-20">
+      <section className="py-20 bg-cream-50">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             One Entry. Many Uses.
           </h2>
-          <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
               Atamai brings all farm data into one place—the Farm Profile. Information captured once flows seamlessly to multiple certifications, audits, and reports. No more entering the same details into different systems. No more hunting through files to find what an auditor needs.
             </p>
             <p>
               Rather than replacing the tools farmers already use, Atamai integrates with existing platforms like FarmIQ and Overseer. Forms are pre-populated where possible, and compliance status is tracked automatically, giving farmers visibility into where they stand without the manual overhead.
             </p>
-            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8">
-              <p className="text-white font-medium text-center">
+            <div className="bg-tint-light border border-mint-500/30 rounded-lg p-6 my-8">
+              <p className="text-forest-800 font-medium text-center">
                 Farmer-controlled from the ground up. You own your data. You authorize every use.
               </p>
             </div>
@@ -72,15 +72,15 @@ export default function AboutPage() {
       </section>
 
       {/* Traction & Validation */}
-      <section className="py-20 bg-white/[0.02]">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             Grounded in Real Farm Needs
           </h2>
-          <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
               Atamai isn't being built in a boardroom. The platform has been shaped by{' '}
-              <span className="text-green-400 font-semibold">75+ farmer interviews</span>{' '}
+              <span className="text-mint-500 font-semibold">75+ farmer interviews</span>{' '}
               and on-farm visits across New Zealand, from high country stations to dairy farms. Every feature reflects what farmers have told us they actually need, not what we assumed they might want.
             </p>
             <p>
@@ -94,12 +94,12 @@ export default function AboutPage() {
       </section>
 
       {/* The Vision */}
-      <section className="py-20">
+      <section className="py-20 bg-cream-50">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             From Compliance to Competitive Advantage
           </h2>
-          <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
               In the near term, Atamai's goal is straightforward: reduce the administrative burden and take pressure off farmers. Less time on paperwork means more time for the work that matters—and for life outside the farm gate.
             </p>
@@ -113,7 +113,7 @@ export default function AboutPage() {
               New Zealand's complex regulatory environment makes it the ideal proving ground. If a platform can work here, with our layered requirements and high standards, it can work anywhere. What we build and prove in New Zealand is designed from day one to scale globally.
             </p>
             <div className="text-center mt-12">
-              <p className="text-xl text-white font-medium">
+              <p className="font-heading text-xl text-forest-800 font-bold">
                 Ultimately, we want to help farmers get back to farming.
               </p>
             </div>
@@ -122,17 +122,17 @@ export default function AboutPage() {
       </section>
 
       {/* The Team */}
-      <section className="py-20 bg-white/[0.02]">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 tracking-tight">
             Built by People Who Know the Problem
           </h2>
-          <p className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-10">
+          <p className="text-lg text-neutral-700 leading-relaxed max-w-3xl mx-auto mb-10">
             Atamai is led by Katie Gillingham and Erik Kiaer. Katie brings a decade of agribusiness and compliance experience from her South Island high country farming background. Erik brings deep expertise in building and scaling complex data platforms. Together, they combine agricultural authenticity with technical capability.
           </p>
           <Link
             href="/team"
-            className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-lg font-medium"
+            className="inline-flex items-center gap-2 text-mint-500 hover:text-mint-600 transition-colors duration-150 text-lg font-medium"
           >
             Meet the Team
             <ArrowRight className="w-5 h-5" />
@@ -141,25 +141,25 @@ export default function AboutPage() {
       </section>
 
       {/* Learn More */}
-      <section className="py-20">
+      <section className="py-20 bg-cream-50">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-10 tracking-tight">
             Want to Learn More?
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <div className="bg-white/5 rounded-xl p-8 border border-white/10">
-              <p className="text-white/70 mb-6">
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm">
+              <p className="text-neutral-700 mb-6">
                 If you're a farmer interested in early access, join our waitlist.
               </p>
               <Link
                 href="/#waitlist"
-                className="btn-primary inline-block"
+                className="btn-accent inline-block"
               >
                 Join Waitlist
               </Link>
             </div>
-            <div className="bg-white/5 rounded-xl p-8 border border-white/10">
-              <p className="text-white/70 mb-6">
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm">
+              <p className="text-neutral-700 mb-6">
                 For partnership inquiries or to learn more about Atamai, get in touch.
               </p>
               <Link
@@ -174,8 +174,8 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-8">
-        <div className="container mx-auto px-6 text-center text-white/50">
+      <footer className="bg-forest-800 border-t border-forest-700 py-8">
+        <div className="container mx-auto px-6 text-center text-cream-100/50">
           <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
         </div>
       </footer>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar } from 'lucide-react'
 import { getAllUpdates } from '@/lib/updates'
@@ -8,18 +7,18 @@ export default function UpdatesPage() {
   const updates = getAllUpdates()
 
   return (
-    <main className="min-h-screen bg-atamai-darker">
+    <main className="min-h-screen bg-cream-50">
       <Navigation />
 
       <div className="max-w-3xl mx-auto px-6 pt-32 pb-20">
-        <h1 className="text-4xl font-bold text-white mb-4">Updates</h1>
-        <p className="text-xl text-white/60 mb-12">
+        <h1 className="font-heading text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">Updates</h1>
+        <p className="text-xl text-neutral-700 mb-12">
           News and progress from the Atamai team.
         </p>
 
         {updates.length === 0 ? (
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 text-center">
-            <p className="text-white/60">No updates yet. Check back soon!</p>
+          <div className="bg-white rounded-2xl p-8 border border-neutral-200 text-center">
+            <p className="text-neutral-500">No updates yet. Check back soon!</p>
           </div>
         ) : (
           <div className="space-y-6">
@@ -27,9 +26,9 @@ export default function UpdatesPage() {
               <Link
                 key={update.slug}
                 href={`/updates/${update.slug}`}
-                className="block bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 hover:bg-white/10 transition-all group"
+                className="block bg-white rounded-2xl p-8 border border-neutral-200 hover:border-mint-500/50 hover:shadow-warm transition-all group"
               >
-                <div className="flex items-center gap-2 text-white/40 text-sm mb-3">
+                <div className="flex items-center gap-2 text-neutral-500 text-sm mb-3">
                   <Calendar className="w-4 h-4" />
                   {new Date(update.date).toLocaleDateString('en-NZ', {
                     year: 'numeric',
@@ -37,13 +36,13 @@ export default function UpdatesPage() {
                     day: 'numeric'
                   })}
                 </div>
-                <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
+                <h2 className="font-heading text-xl font-bold text-forest-800 mb-2 group-hover:text-mint-500 transition-colors">
                   {update.title}
                 </h2>
-                <p className="text-white/60">
+                <p className="text-neutral-700">
                   {update.excerpt}
                 </p>
-                <span className="inline-block mt-4 text-green-400 text-sm font-medium">
+                <span className="inline-block mt-4 text-mint-500 text-sm font-medium">
                   Read more →
                 </span>
               </Link>
@@ -53,25 +52,9 @@ export default function UpdatesPage() {
       </div>
 
       {/* Footer */}
-      <footer className="py-12 bg-atamai-darker border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-4">
-              <Image 
-                src="/atamai-light.png" 
-                alt="Atamai" 
-                width={100} 
-                height={32}
-                className="h-8 w-auto opacity-60"
-              />
-              <span className="text-white/40 text-sm">
-                Farm compliance, simplified.
-              </span>
-            </div>
-            <div className="text-white/40 text-sm">
-              © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
-            </div>
-          </div>
+      <footer className="bg-forest-800 border-t border-forest-700 py-8">
+        <div className="container mx-auto px-6 text-center text-cream-100/50">
+          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
         </div>
       </footer>
     </main>

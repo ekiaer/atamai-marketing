@@ -53,27 +53,27 @@ export const metadata = {
 
 export default function TeamPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-cream-50">
       <Navigation />
 
       {/* Hero */}
       <section className="container mx-auto px-6 pt-32 pb-16 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-forest-800 mb-6 tracking-tight">
           Meet Our Team
         </h1>
-        <p className="text-xl text-white/70 max-w-2xl mx-auto">
+        <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
           We're passionate about empowering New Zealand farmers with technology that simplifies compliance and lets them focus on what they do best.
         </p>
       </section>
 
       {/* Co-founders */}
       <section className="container mx-auto px-6 pb-16">
-        <h2 className="text-2xl font-bold text-white/50 text-center mb-12">Co-founders</h2>
+        <h2 className="font-heading text-2xl font-bold text-neutral-500 text-center mb-12">Co-founders</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {team.map((member) => (
             <div
               key={member.name}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-warm"
             >
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="relative w-32 h-32 mb-4">
@@ -81,14 +81,14 @@ export default function TeamPage() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="rounded-full object-cover border-4 border-green-500/30"
+                    className="rounded-full object-cover border-4 border-mint-500/30"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                <h3 className="font-heading text-xl font-bold text-forest-800">{member.name}</h3>
               </div>
               <div className="space-y-4">
                 {member.bio.map((paragraph, index) => (
-                  <p key={index} className="text-white/70 leading-relaxed text-sm">
+                  <p key={index} className="text-neutral-700 leading-relaxed text-sm">
                     {paragraph}
                   </p>
                 ))}
@@ -100,12 +100,12 @@ export default function TeamPage() {
 
       {/* Advisors */}
       <section className="container mx-auto px-6 pb-24">
-        <h2 className="text-2xl font-bold text-white/50 text-center mb-12">Advisors</h2>
+        <h2 className="font-heading text-2xl font-bold text-neutral-500 text-center mb-12">Advisors</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {advisors.map((advisor) => (
             <div
               key={advisor.name}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-warm"
             >
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="relative w-28 h-28 mb-4">
@@ -113,12 +113,12 @@ export default function TeamPage() {
                     src={advisor.image}
                     alt={advisor.name}
                     fill
-                    className="rounded-full object-cover border-4 border-white/20"
+                    className="rounded-full object-cover border-4 border-neutral-200"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white">{advisor.name}</h3>
+                <h3 className="font-heading text-xl font-bold text-forest-800">{advisor.name}</h3>
               </div>
-              <p className="text-white/70 leading-relaxed text-sm">
+              <p className="text-neutral-700 leading-relaxed text-sm">
                 {advisor.bio}
               </p>
             </div>
@@ -128,16 +128,16 @@ export default function TeamPage() {
 
       {/* CTA */}
       <section className="container mx-auto px-6 pb-24 text-center">
-        <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl p-12 border border-green-500/30">
-          <h2 className="text-3xl font-bold text-white mb-4">
+        <div className="bg-forest-800 rounded-2xl p-12">
+          <h2 className="font-heading text-3xl font-extrabold text-white mb-4 tracking-tight">
             Ready to Simplify Your Farm Compliance?
           </h2>
-          <p className="text-white/70 mb-8 max-w-xl mx-auto">
+          <p className="text-cream-100/70 mb-8 max-w-xl mx-auto">
             Join the waitlist and be among the first to experience Atamai.
           </p>
           <Link
             href="/#waitlist"
-            className="btn-primary inline-block"
+            className="btn-accent inline-block"
           >
             Join the Waitlist
           </Link>
@@ -145,8 +145,8 @@ export default function TeamPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-8">
-        <div className="container mx-auto px-6 text-center text-white/50">
+      <footer className="bg-forest-800 border-t border-forest-700 py-8">
+        <div className="container mx-auto px-6 text-center text-cream-100/50">
           <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
         </div>
       </footer>
