@@ -9,15 +9,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'atamai': {
-          'dark': '#1a1a2e',
-          'darker': '#0f0f1a',
-          'accent': '#4ade80',
-          'accent-dark': '#22c55e',
-        }
+        'forest': {
+          '700': '#1b3926',
+          '800': '#162e1f',
+          '950': '#0a1a0f',
+        },
+        'mint': {
+          '50':  '#edfdf4',
+          '100': '#d4fae6',
+          '400': '#3de3a3',
+          '500': '#16d48e',
+          '600': '#10b577',
+          '700': '#0d8f5e',
+        },
+        'cream': {
+          '50':  '#fefdf6',
+          '100': '#fbf8ea',
+        },
+        'tint': {
+          'light': '#f0f9f4',
+        },
+        'neutral': {
+          '200': '#e5e3dc',
+          '300': '#d4d1c8',
+          '500': '#959083',
+          '600': '#7a7568',
+          '700': '#625e55',
+        },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        'warm-sm': '0 1px 2px rgba(26, 46, 34, 0.06)',
+        'warm': '0 1px 3px rgba(26, 46, 34, 0.1), 0 1px 2px rgba(26, 46, 34, 0.06)',
+        'warm-md': '0 4px 6px rgba(26, 46, 34, 0.07), 0 2px 4px rgba(26, 46, 34, 0.06)',
+        'warm-lg': '0 10px 15px rgba(26, 46, 34, 0.08), 0 4px 6px rgba(26, 46, 34, 0.05)',
       },
     },
   },

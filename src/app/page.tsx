@@ -18,40 +18,40 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-atamai-darker" />
+          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-neutral-950/40 to-neutral-950/70" />
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
             Stop Drowning in
-            <span className="text-green-400"> Compliance Paperwork</span>
+            <span className="text-mint-400"> Compliance Paperwork</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Atamai automates farm certification for New Zealand farmers. 
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-lg">
+            Atamai automates farm certification for New Zealand farmers.
             Upload your FEP, we handle the rest.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#waitlist" className="btn-primary text-lg px-10">
+            <a href="#waitlist" className="btn-accent text-lg px-10">
               Get Early Access
             </a>
-            <a href="#how-it-works" className="text-white/70 hover:text-white transition-colors">
+            <a href="#how-it-works" className="text-white/70 hover:text-white transition-colors duration-150">
               See how it works →
             </a>
           </div>
-          
+
           {/* Trust indicators */}
-          <div className="mt-12 flex flex-wrap justify-center gap-6 text-white/60 text-sm">
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-green-400" />
-              NZFAP & NZFAP+ Ready
+          <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm">
+            <span className="flex items-center gap-2 bg-mint-400/20 text-white font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+              <CheckCircle className="w-4 h-4 text-mint-400" />
+              NZFAP+ Ready
             </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-green-400" />
+            <span className="flex items-center gap-2 bg-mint-400/20 text-white font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+              <CheckCircle className="w-4 h-4 text-mint-400" />
               Your Data, Your Control
             </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-green-400" />
+            <span className="flex items-center gap-2 bg-mint-400/20 text-white font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+              <CheckCircle className="w-4 h-4 text-mint-400" />
               Built for NZ Farmers
             </span>
           </div>
@@ -66,45 +66,45 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-atamai-darker">
+      <section className="py-20 bg-cream-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">
               Compliance Shouldn't Take 80+ Hours
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              You already have the data. It's in your FEP, your records, your head. 
+            <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
+              You already have the data. It's in your FEP, your records, your head.
               But getting it into the right format for auditors? That's the problem.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-              <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
-                <Clock className="w-6 h-6 text-red-400" />
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm">
+              <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-6">
+                <Clock className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Time Drain</h3>
-              <p className="text-white/60">
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Time Drain</h3>
+              <p className="text-neutral-700">
                 Farmers spend days filling out forms that ask for information they've already documented elsewhere.
               </p>
             </div>
 
-            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-              <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6">
-                <FileText className="w-6 h-6 text-orange-400" />
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm">
+              <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-6">
+                <FileText className="w-6 h-6 text-orange-500" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Scattered Data</h3>
-              <p className="text-white/60">
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Scattered Data</h3>
+              <p className="text-neutral-700">
                 Your FEP says one thing, your records say another, and the auditor wants it in a third format.
               </p>
             </div>
 
-            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-              <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
-                <Shield className="w-6 h-6 text-yellow-400" />
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm">
+              <div className="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center mb-6">
+                <Shield className="w-6 h-6 text-amber-500" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Audit Anxiety</h3>
-              <p className="text-white/60">
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Audit Anxiety</h3>
+              <p className="text-neutral-700">
                 The stress of not knowing if you're actually compliant until someone shows up to check.
               </p>
             </div>
@@ -113,47 +113,47 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-atamai-dark">
+      <section id="how-it-works" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">
               How Atamai Works
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
               Three steps to compliance confidence
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Upload className="w-8 h-8 text-green-400" />
+              <div className="mx-auto mb-6">
+                <Upload className="w-8 h-8 text-mint-600" />
               </div>
-              <div className="text-green-400 font-semibold text-sm mb-2">Step 1</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Upload Your FEP</h3>
-              <p className="text-white/60">
+              <div className="text-mint-500 font-semibold text-sm mb-2">Step 1</div>
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Upload Your FEP</h3>
+              <p className="text-neutral-700">
                 Drop in your Farm Environment Plan. Our AI reads and extracts the data automatically.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-8 h-8 text-green-400" />
+              <div className="mx-auto mb-6">
+                <CheckCircle className="w-8 h-8 text-mint-600" />
               </div>
-              <div className="text-green-400 font-semibold text-sm mb-2">Step 2</div>
-              <h3 className="text-xl font-semibold text-white mb-3">See Your Gaps</h3>
-              <p className="text-white/60">
+              <div className="text-mint-500 font-semibold text-sm mb-2">Step 2</div>
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">See Your Gaps</h3>
+              <p className="text-neutral-700">
                 Instantly see what requirements you meet and exactly what's missing for certification.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-green-400" />
+              <div className="mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-mint-600" />
               </div>
-              <div className="text-green-400 font-semibold text-sm mb-2">Step 3</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Get Certified</h3>
-              <p className="text-white/60">
+              <div className="text-mint-500 font-semibold text-sm mb-2">Step 3</div>
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-3">Get Certified</h3>
+              <p className="text-neutral-700">
                 Fill gaps with guided tasks. Generate audit-ready reports. Pass with confidence.
               </p>
             </div>
@@ -162,59 +162,51 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-atamai-darker">
+      <section className="py-20 bg-cream-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Your Data Works <span className="text-green-400">For You</span>
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-6 tracking-tight">
+                Your Data Works <span className="text-mint-500">For You</span>
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-1">80+ hours → Under 30 minutes</h3>
-                    <p className="text-white/60">Upload once, populate everywhere. No more re-entering the same data.</p>
+                    <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">80+ hours → Under 30 minutes</h3>
+                    <p className="text-neutral-700">Upload once, populate everywhere. No more re-entering the same data.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-1">Multi-framework compliance</h3>
-                    <p className="text-white/60">Local, regional, national, and international requirements — check against them all at once.</p>
+                    <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">Multi-framework compliance</h3>
+                    <p className="text-neutral-700">Local, regional, national, and international requirements — check against them all at once.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-1">You own your data</h3>
-                    <p className="text-white/60">We're stewards, not owners. Your farm data belongs to you — always.</p>
+                    <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">You own your data</h3>
+                    <p className="text-neutral-700">We're stewards, not owners. Your farm data belongs to you — always.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-1">Premium market access</h3>
-                    <p className="text-white/60">Prove your story to processors and consumers with verified data.</p>
+                    <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">Premium market access</h3>
+                    <p className="text-neutral-700">Prove your story to processors and consumers with verified data.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+            <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm-md">
               <div className="text-center">
-                <div className="text-6xl font-bold text-green-400 mb-2">71%</div>
-                <p className="text-white/60 mb-6">Average compliance on first FEP upload</p>
-                <div className="h-px bg-white/10 my-6" />
-                <div className="text-4xl font-bold text-white mb-2">3 min</div>
-                <p className="text-white/60">To see your full compliance status</p>
+                <div className="font-heading text-6xl font-extrabold text-forest-800 mb-2">71%</div>
+                <p className="text-neutral-600 mb-6">Average compliance on first FEP upload</p>
+                <div className="h-px bg-neutral-200 my-6" />
+                <div className="font-heading text-4xl font-extrabold text-forest-800 mb-2">3 min</div>
+                <p className="text-neutral-600">To see your full compliance status</p>
               </div>
             </div>
           </div>
@@ -222,20 +214,20 @@ export default function Home() {
       </section>
 
       {/* Latest Updates Section */}
-      <section className="py-20 bg-atamai-dark">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-end mb-10">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-2 tracking-tight">
                 Latest Updates
               </h2>
-              <p className="text-white/60">
+              <p className="text-neutral-600">
                 News and progress from the Atamai team
               </p>
             </div>
-            <a 
-              href="/updates" 
-              className="text-green-400 hover:text-green-300 transition-colors font-medium hidden sm:block"
+            <a
+              href="/updates"
+              className="text-neutral-600 hover:text-forest-800 hover:underline transition-colors duration-150 font-medium hidden sm:block"
             >
               View all updates →
             </a>
@@ -244,35 +236,35 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             <a
               href="/updates/welcome-to-atamai"
-              className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 hover:bg-white/10 transition-all group"
+              className="bg-white rounded-lg p-8 border border-neutral-200 hover:border-mint-500/50 hover:shadow-warm-md transition-all group"
             >
-              <div className="text-white/40 text-sm mb-3">December 10, 2025</div>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
+              <div className="text-neutral-500 text-sm mb-3">December 10, 2025</div>
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-2 group-hover:text-mint-600 transition-colors">
                 Welcome to Atamai
               </h3>
-              <p className="text-white/60">
+              <p className="text-neutral-700">
                 We're building something new for New Zealand farmers - a smarter way to handle compliance.
               </p>
             </a>
 
             <a
               href="/updates/farmers-own-their-data"
-              className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 hover:bg-white/10 transition-all group"
+              className="bg-white rounded-lg p-8 border border-neutral-200 hover:border-mint-500/50 hover:shadow-warm-md transition-all group"
             >
-              <div className="text-white/40 text-sm mb-3">December 16, 2025</div>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
+              <div className="text-neutral-500 text-sm mb-3">December 16, 2025</div>
+              <h3 className="font-heading text-xl font-bold text-forest-800 mb-2 group-hover:text-mint-600 transition-colors">
                 Why Farmers Should Own Their Data
               </h3>
-              <p className="text-white/60">
+              <p className="text-neutral-700">
                 Your farm data is valuable. Here's why you should control who accesses it.
               </p>
             </a>
           </div>
 
           <div className="mt-6 text-center sm:hidden">
-            <a 
-              href="/updates" 
-              className="text-green-400 hover:text-green-300 transition-colors font-medium"
+            <a
+              href="/updates"
+              className="text-neutral-600 hover:text-forest-800 hover:underline transition-colors duration-150 font-medium"
             >
               View all updates →
             </a>
@@ -281,31 +273,31 @@ export default function Home() {
       </section>
 
       {/* Waitlist Section */}
-      <section id="waitlist" className="py-20 bg-atamai-darker">
+      <section id="waitlist" className="py-20 bg-tint-light">
         <div className="max-w-2xl mx-auto px-6">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">
               Join the Waitlist
             </h2>
-            <p className="text-xl text-white/60">
-              Be among the first NZ farmers to try Atamai. 
+            <p className="text-xl text-neutral-700">
+              Be among the first NZ farmers to try Atamai.
               Early access members help shape the platform.
             </p>
           </div>
 
           {/* Netlify Form */}
-          <form 
-            name="waitlist" 
-            method="POST" 
+          <form
+            name="waitlist"
+            method="POST"
             data-netlify="true"
             action="/thank-you"
-            className="bg-white/5 rounded-2xl p-8 border border-white/10"
+            className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm-md"
           >
             <input type="hidden" name="form-name" value="waitlist" />
-            
+
             <div className="space-y-5">
               <div>
-                <label htmlFor="name" className="block text-white/80 text-sm font-medium mb-2">
+                <label htmlFor="name" className="block text-forest-800 text-sm font-medium mb-2">
                   Your Name
                 </label>
                 <input
@@ -319,7 +311,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-white/80 text-sm font-medium mb-2">
+                <label htmlFor="email" className="block text-forest-800 text-sm font-medium mb-2">
                   Email Address
                 </label>
                 <input
@@ -333,7 +325,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="region" className="block text-white/80 text-sm font-medium mb-2">
+                <label htmlFor="region" className="block text-forest-800 text-sm font-medium mb-2">
                   Farm Region
                 </label>
                 <select
@@ -364,7 +356,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="farm_type" className="block text-white/80 text-sm font-medium mb-2">
+                <label htmlFor="farm_type" className="block text-forest-800 text-sm font-medium mb-2">
                   Farm Type
                 </label>
                 <select
@@ -386,7 +378,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="challenge" className="block text-white/80 text-sm font-medium mb-2">
+                <label htmlFor="challenge" className="block text-forest-800 text-sm font-medium mb-2">
                   Biggest Compliance Challenge (Optional)
                 </label>
                 <textarea
@@ -405,7 +397,7 @@ export default function Home() {
                 Join the Waitlist
               </button>
 
-              <p className="text-white/40 text-sm text-center">
+              <p className="text-neutral-500 text-sm text-center">
                 We respect your privacy. No spam, ever.
               </p>
             </div>
@@ -414,22 +406,22 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-atamai-darker border-t border-white/10">
+      <footer className="py-12 bg-forest-800 border-t border-forest-700">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
-              <Image 
-                src="/atamai-light.png" 
-                alt="Atamai" 
-                width={100} 
+              <Image
+                src="/atamai-light.png"
+                alt="Atamai"
+                width={100}
                 height={32}
                 className="h-8 w-auto opacity-60"
               />
-              <span className="text-white/40 text-sm">
+              <span className="text-cream-100/50 text-sm">
                 Farm compliance, simplified.
               </span>
             </div>
-            <div className="text-white/40 text-sm">
+            <div className="text-cream-100/50 text-sm">
               © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
             </div>
           </div>
