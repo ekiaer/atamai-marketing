@@ -18,7 +18,7 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-neutral-950/40 to-forest-800" />
+          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-neutral-950/40 to-neutral-950/70" />
         </div>
 
         {/* Hero Content */}
@@ -126,7 +126,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="mx-auto mb-6">
                 <Upload className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 1</div>
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="mx-auto mb-6">
                 <CheckCircle className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 2</div>
@@ -148,7 +148,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-mint-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="mx-auto mb-6">
                 <TrendingUp className="w-8 h-8 text-mint-600" />
               </div>
               <div className="text-mint-500 font-semibold text-sm mb-2">Step 3</div>
@@ -171,36 +171,28 @@ export default function Home() {
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-tint-light rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-mint-500" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">80+ hours → Under 30 minutes</h3>
                     <p className="text-neutral-700">Upload once, populate everywhere. No more re-entering the same data.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-tint-light rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-mint-500" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">Multi-framework compliance</h3>
                     <p className="text-neutral-700">Local, regional, national, and international requirements — check against them all at once.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-tint-light rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-mint-500" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">You own your data</h3>
                     <p className="text-neutral-700">We're stewards, not owners. Your farm data belongs to you — always.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-tint-light rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-mint-500" />
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-mint-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-heading text-lg font-bold text-forest-800 mb-1">Premium market access</h3>
                     <p className="text-neutral-700">Prove your story to processors and consumers with verified data.</p>
