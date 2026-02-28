@@ -36,7 +36,7 @@ export default async function UpdatePage({ params }: { params: Promise<{ slug: s
   const contentHtml = marked(update.content)
 
   return (
-    <main className="min-h-screen bg-cream-50">
+    <main className="min-h-screen bg-tint-light">
       <Navigation />
 
       <article className="max-w-3xl mx-auto px-6 pt-32 pb-20">

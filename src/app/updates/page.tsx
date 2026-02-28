@@ -7,7 +7,7 @@ export default function UpdatesPage() {
   const updates = getAllUpdates()
 
   return (
-    <main className="min-h-screen bg-cream-50">
+    <main className="min-h-screen bg-tint-light">
       <Navigation />
 
       <div className="max-w-3xl mx-auto px-6 pt-32 pb-20">

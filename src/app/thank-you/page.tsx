@@ -3,7 +3,7 @@ import { CheckCircle, ArrowLeft } from 'lucide-react'
 
 export default function ThankYou() {
   return (
-    <main className="min-h-screen bg-cream-50 flex items-center justify-center">
+    <main className="min-h-screen bg-tint-light flex items-center justify-center">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-forest-800 border-b border-forest-700">
         <div className="max-w-7xl mx-auto px-6 py-4">

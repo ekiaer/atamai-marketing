@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-cream-50">
+    <main className="min-h-screen bg-tint-light">
       <Navigation />
 
       {/* Hero */}
@@ -23,7 +23,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Problem */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             The Compliance Burden is Real
@@ -47,7 +47,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             One Entry. Many Uses.
@@ -72,7 +72,7 @@ export default function AboutPage() {
       </section>
 
       {/* Traction & Validation */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             Grounded in Real Farm Needs
@@ -94,7 +94,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Vision */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 text-center tracking-tight">
             From Compliance to Competitive Advantage
@@ -122,7 +122,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Team */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-8 tracking-tight">
             Built by People Who Know the Problem
@@ -141,7 +141,7 @@ export default function AboutPage() {
       </section>
 
       {/* Learn More */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-20 bg-tint-light">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-10 tracking-tight">
             Want to Learn More?
