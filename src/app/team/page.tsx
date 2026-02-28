@@ -53,7 +53,7 @@ export const metadata = {
 
 export default function TeamPage() {
   return (
-    <main className="min-h-screen bg-cream-50">
+    <main className="min-h-screen bg-tint-light">
       <Navigation />
 
       {/* Hero */}

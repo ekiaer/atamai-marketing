@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-20 bg-tint-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-white">
+      <section id="how-it-works" className="py-20 bg-tint-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-forest-800 mb-4 tracking-tight">
@@ -162,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-20 bg-tint-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* Latest Updates Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-tint-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-end mb-10">
             <div>
