@@ -53,7 +53,7 @@ After deploying:
 
 1. In Netlify dashboard, go to "Domain settings"
 2. Click "Add custom domain"
-3. Enter: `atamaiag.ai`
+3. Enter: `www.atamaiag.com` (primary) and `atamaiag.com` (apex)
 4. Netlify will provide DNS settings
 5. Update your domain registrar's DNS to point to Netlify
 
