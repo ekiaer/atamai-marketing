@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="878 818 528 394"
+     style="fill-rule:evenodd;clip-rule:evenodd">
+  <style>
+    .logo { fill: #162e1f; }
+    @media (prefers-color-scheme: dark) {
+      .logo { fill: #fbf8ea; }
+    }
+  </style>
+  <!-- Top hill -->
+  <g class="logo" transform="matrix(4.16667,0,0,4.16667,888.203,364.399)">
+    <path d="M55.933,152.01L0.288,152.01L0.288,139.437L50.77,139.437C69.889,121.244 94.841,111.258 121.331,111.258L121.331,123.832C97.32,123.832 74.749,133.185 57.775,150.168L55.933,152.01Z" fill-rule="nonzero"/>
+  </g>
+  <!-- Second hill -->
+  <g class="logo" transform="matrix(4.16667,0,0,4.16667,888.203,591.991)">
+    <path d="M84.752,109.252L0.288,109.252L0.288,121.825L89.916,121.825L91.758,119.982C100.358,111.377 110.398,104.735 121.331,100.272L121.331,86.822C107.827,91.557 95.387,99.132 84.752,109.252" fill-rule="nonzero"/>
+  </g>
+  <!-- Upper bar -->
+  <g class="logo" transform="matrix(4.16667,0,0,4.16667,888.203,889.09)">
+    <rect x="0.288" y="62.574" width="121.043" height="12.195"/>
+  </g>
+</svg>
