@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
+import JsonLd from '@/components/JsonLd'
+import { personSchema } from '@/lib/schemas'
 
 const team = [
   {
@@ -65,6 +67,17 @@ export default function TeamPage() {
   return (
     <main className="min-h-screen bg-tint-light">
       <Navigation />
+      {team.map((member) => (
+        <JsonLd
+          key={member.name}
+          data={personSchema({
+            name: member.name,
+            jobTitle: member.role,
+            description: member.bio[0],
+            image: member.image,
+          })}
+        />
+      ))}
 
       {/* Hero */}
       <section className="container mx-auto px-6 pt-32 pb-16 text-center">

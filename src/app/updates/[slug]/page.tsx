@@ -4,6 +4,8 @@ import { marked } from 'marked'
 import { getAllUpdateSlugs, getUpdateBySlug } from '@/lib/updates'
 import { notFound } from 'next/navigation'
 import Navigation from '@/components/Navigation'
+import JsonLd from '@/components/JsonLd'
+import { articleSchema, faqPageSchema } from '@/lib/schemas'
 
 // Generate static paths for all updates
 export async function generateStaticParams() {
@@ -58,6 +60,8 @@ export default async function UpdatePage({ params }: { params: Promise<{ slug: s
   return (
     <main className="min-h-screen bg-tint-light">
       <Navigation />
+      <JsonLd data={articleSchema(update)} />
+      {update.faqs?.length ? <JsonLd data={faqPageSchema(update.faqs)} /> : null}
 
       <article className="max-w-3xl mx-auto px-6 pt-32 pb-20">
         <Link

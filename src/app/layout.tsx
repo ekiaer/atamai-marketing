@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { organizationSchema, websiteSchema } from '@/lib/schemas'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -72,6 +74,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-body antialiased">
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={websiteSchema()} />
         {children}
       </body>
     </html>
