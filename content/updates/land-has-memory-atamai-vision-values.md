@@ -3,9 +3,9 @@ title: "Land Has Memory: The Vision and Values Behind Atamai"
 date: "2026-04-08"
 excerpt: "Atamai is a farm compliance and data platform for New Zealand pasture-based farmers, built on the belief that the environmental record of a property is a data asset the farmer owns. Here's what we believe, and why we built it this way."
 author: "Erik Kiaer"
-author_title: "Co-Founder & CEO, Atamai"
+author_title: "Co-Founder, Atamai"
 last_updated: "2026-04-08"
-canonical_url: "https://www.atamaiag.com/updates/land-has-memory-atamai-vision-values/"
+canonical_url: "https://atamaiag.com/updates/land-has-memory-atamai-vision-values/"
 tags:
   - vision
   - values
@@ -20,22 +20,22 @@ faqs:
   - question: "Who owns the data I enter into Atamai?"
     answer: "The farmer owns their data. Atamai is a custodian, not an owner. Data can be exported in full at any time, and no data is shared with partners without the farmer's explicit, revocable consent."
   - question: "Does Atamai replace my farm management software?"
-    answer: "No. Atamai is a compliance intelligence layer that complements tools like FarmIQ, Mobble, Farmax, and Overseer. It receives data from those systems and structures it for compliance and partner reporting."
+    answer: "No. Atamai is a compliance intelligence layer that complements tools like FarmIQ, Resolution, MINDA, Dairy Diary, Mobble, Farmax, and Overseer. It receives data from those systems and structures it for compliance and partner reporting."
   - question: "Is Atamai free to use?"
     answer: "The core platform — entering data, building the property record, and meeting New Zealand regulations and certifications — is free and always will be. Premium services apply only to value-add features beyond the compliance core, such as pasture growth predictions, advanced analytics, and benchmarking."
   - question: "What does the name Atamai mean?"
-    answer: "Atamai is a Māori word meaning smart or intelligent. We chose it to reflect the principle of kaitiakitanga (guardianship) and the belief that the health of the land and the health of the people who work it are inseparable."
+    answer: "Atamai comes from te reo Māori, where it means smart or intelligent. We chose it to reflect the principle of kaitiakitanga (guardianship) and the belief that the health of the land and the health of the people who work it are inseparable."
   - question: "Who is Atamai built for?"
     answer: "Atamai is built for New Zealand pasture-based farmers — starting with sheep and beef, with dairy, horticulture, viticulture, and the wider primary sector on our roadmap — the consultants who advise them, and the value-chain partners who rely on verified information about how land is managed."
   - question: "How does Atamai make money if the core is free?"
-    answer: "Four revenue streams, none of which involve charging farmers to enter data or meet New Zealand compliance requirements. First, premium subscriptions for value-add features like pasture growth predictions and advanced analytics. Second, traceability services for processors and agricultural product buyers who need verified provenance at the point of sale. Third, data-exchange integrations with input suppliers, delivered on the farmer's behalf and with their consent. And fourth, white-labelling the core compliance engine for use by other platforms and organisations who want to offer compliance tooling to their own farmer networks."
+    answer: "Four revenue streams, none of which involve charging farmers to enter data or meet New Zealand compliance requirements. First, premium subscriptions for value-add features like pasture growth predictions and advanced analytics. Second, traceability services for processors and agricultural product buyers who need verified provenance at the point of sale. Third, data-exchange integrations with input suppliers, delivered on the farmer's behalf and with their consent. And fourth, white-labelling the core compliance engine — the engine, not the data — for use by other platforms and organisations who want to offer compliance tooling to their own farmer networks. The farmer's data stays the farmer's. Revenue comes from the intelligence layer built on top of it, never from the data itself."
 ---
 
 # Land Has Memory: The Vision and Values Behind Atamai
 
 **Atamai is a farm compliance and data platform for New Zealand pasture-based farmers — starting with sheep and beef — built on a single belief: the accumulated environmental record of a property is a data asset, it has real and measurable value, and it belongs to the farmer.** This post explains what we believe, what we won't do, and why those two things matter as much to us as any feature we ship.
 
-*By Erik Kiaer, Co-Founder & CEO — 8 April 2026*
+*By Erik Kiaer, Co-Founder — 8 April 2026*
 
 ---
 
@@ -43,7 +43,7 @@ faqs:
 
 Atamai is the compliance intelligence layer for New Zealand farms, starting with the pasture-based sector — sheep and beef first, with dairy, horticulture, viticulture, and the wider primary sector on our roadmap as the platform matures. Farmers enter data once — a winter grazing plan, a soil test, a fenced-waterway photo — for their own regulatory purpose, and the platform structures that data so it also works for NZFAP+ certification, Farm Environment Plans, regional council reporting, and (with the farmer's explicit consent) value-chain partners like processors, banks, and input suppliers. The farmer does the work once. Value flows in many directions. That's it.
 
-The name *Atamai* is a Māori word meaning **smart** or **intelligent**. We chose it because it carries a design constraint, not a marketing position: every feature we build should make it easier for a farmer to work *with* the land, not against it.
+The name *Atamai* comes from te reo Māori, where it means **smart** or **intelligent**. We chose it because it carries a design constraint, not a marketing position: every feature we build should make it easier for a farmer to work *with* the land, not against it.
 
 ---
 
@@ -97,7 +97,7 @@ Three principles govern it:
 
 Clarity about what we *don't* do is as important as what we do.
 
-**Atamai is not a farm management tool.** It does not replace FarmIQ, MINDA, Mobble, Farmax, or Overseer. Farmers manage stock in their farm management software, finances in Xero or Figured, nutrients in Overseer. Atamai is the compliance intelligence layer that makes those platforms more valuable — it receives their data, structures it for compliance, and generates the evidence trail that certifications and partners require.
+**Atamai is not a farm management tool.** It does not replace FarmIQ, Resolution, MINDA, Dairy Diary, Mobble, Farmax, or Overseer. Farmers manage stock in their farm management software, finances in Xero or Figured, nutrients in Overseer. Atamai is the compliance intelligence layer that makes those platforms more valuable — it receives their data, structures it for compliance, and generates the evidence trail that certifications and partners require.
 
 **Atamai is not a data broker.** We do not sell raw farmer data. We provide verified compliance intelligence through farmer-consented, structured, revocable partner connections.
 
@@ -124,20 +124,30 @@ Atamai is a farm compliance and data platform for New Zealand pasture-based farm
 The farmer owns their data. Atamai is a custodian, not an owner. Data can be exported in full at any time, and no data is shared with partners without the farmer's explicit, revocable consent.
 
 **Does Atamai replace my farm management software?**
-No. Atamai is a compliance intelligence layer that complements tools like FarmIQ, Mobble, Farmax, and Overseer. It receives data from those systems and structures it for compliance and partner reporting.
+No. Atamai is a compliance intelligence layer that complements tools like FarmIQ, Resolution, MINDA, Dairy Diary, Mobble, Farmax, and Overseer. It receives data from those systems and structures it for compliance and partner reporting.
 
 **Is Atamai free to use?**
 The core platform — entering data, building the property record, and meeting New Zealand regulations and certifications — is free and always will be. Premium services apply only to value-add features beyond the compliance core, such as pasture growth predictions, advanced analytics, and benchmarking.
 
 **What does the name Atamai mean?**
-*Atamai* is a Māori word meaning smart or intelligent. We chose it to reflect the principle of *kaitiakitanga* (guardianship) and the belief that the health of the land and the health of the people who work it are inseparable.
+*Atamai* comes from te reo Māori, where it means smart or intelligent. We chose it to reflect the principle of *kaitiakitanga* (guardianship) and the belief that the health of the land and the health of the people who work it are inseparable.
 
 **Who is Atamai built for?**
 Atamai is built for New Zealand pasture-based farmers — starting with sheep and beef, with dairy, horticulture, viticulture, and the wider primary sector on our roadmap — the consultants who advise them, and the value-chain partners who rely on verified information about how land is managed.
 
 **How does Atamai make money if the core is free?**
-Four revenue streams, none of which involve charging farmers to enter data or meet New Zealand compliance requirements. First, premium subscriptions for value-add features like pasture growth predictions and advanced analytics. Second, traceability services for processors and agricultural product buyers who need verified provenance at the point of sale. Third, data-exchange integrations with input suppliers, delivered on the farmer's behalf and with their consent. And fourth, white-labelling the core compliance engine for use by other platforms and organisations who want to offer compliance tooling to their own farmer networks.
+Four revenue streams, none of which involve charging farmers to enter data or meet New Zealand compliance requirements. First, premium subscriptions for value-add features like pasture growth predictions and advanced analytics. Second, traceability services for processors and agricultural product buyers who need verified provenance at the point of sale. Third, data-exchange integrations with input suppliers, delivered on the farmer's behalf and with their consent. And fourth, white-labelling the core compliance engine — the engine, not the data — for use by other platforms and organisations who want to offer compliance tooling to their own farmer networks. The farmer's data stays the farmer's. Revenue comes from the intelligence layer built on top of it, never from the data itself.
 
 ---
 
-*This post is Version 1.1, published 8 April 2026. It will be updated as our thinking evolves and as we learn from the farmers, consultants, and partners we work with.*
+## About the Authors
+
+Erik Kiaer and Katie Riches are the co-founders of Atamai Agricultural Intelligence, a farm compliance platform for New Zealand pasture-based farmers. See you at Fieldays 2026.
+
+**Contact:** erik@atamaiag.com
+**Platform:** [app.atamaiag.com](https://app.atamaiag.com)
+**Company:** [AtamaiAg.com](https://atamaiag.com)
+
+---
+
+*This post is Version 1.3, published 8 April 2026. It will be updated as our thinking evolves and as we learn from the farmers, consultants, and partners we work with.*
