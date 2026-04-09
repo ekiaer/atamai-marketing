@@ -1,0 +1,6 @@
+# https://www.atamaiag.com/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.atamaiag.com/sitemap.xml
