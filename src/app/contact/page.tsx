@@ -1,9 +1,19 @@
 import Navigation from '@/components/Navigation'
 import { Mail } from 'lucide-react'
 
-export const metadata = {
-  title: 'Contact Us | Atamai',
-  description: 'Get in touch with the Atamai team. We\'d love to hear from you.',
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description:
+    'Get in touch with the Atamai team — partnerships, press, or general inquiries about farm compliance technology.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Us | Atamai',
+    description:
+      'Get in touch with the Atamai team — partnerships, press, or general inquiries.',
+    url: '/contact',
+  },
 }
 
 export default function ContactPage() {

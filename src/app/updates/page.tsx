@@ -1,7 +1,20 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Calendar } from 'lucide-react'
 import { getAllUpdates } from '@/lib/updates'
 import Navigation from '@/components/Navigation'
+
+export const metadata: Metadata = {
+  title: 'Updates',
+  description:
+    'News, product updates, and progress from the Atamai team — building farmer-first compliance technology in New Zealand.',
+  alternates: { canonical: '/updates' },
+  openGraph: {
+    title: 'Updates | Atamai',
+    description: 'News and progress from the Atamai team.',
+    url: '/updates',
+  },
+}
 
 export default function UpdatesPage() {
   const updates = getAllUpdates()

@@ -16,12 +16,32 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const update = getUpdateBySlug(slug)
   if (!update) {
-    return { title: 'Update Not Found | Atamai' }
+    return { title: 'Update Not Found' }
   }
-  return {
-    title: `${update.title} | Atamai Updates`,
+
+  const metadata: Record<string, unknown> = {
+    title: update.title,
     description: update.excerpt,
+    alternates: { canonical: `/updates/${slug}` },
+    openGraph: {
+      title: update.title,
+      description: update.excerpt,
+      type: 'article',
+      url: `/updates/${slug}`,
+      publishedTime: update.date,
+      ...(update.last_updated && { modifiedTime: update.last_updated }),
+      ...(update.author && { authors: [update.author] }),
+      ...(update.image && {
+        images: [{ url: update.image, alt: update.image_alt || update.title }],
+      }),
+    },
   }
+
+  if (update.tags?.length) {
+    metadata.keywords = update.tags
+  }
+
+  return metadata
 }
 
 export default async function UpdatePage({ params }: { params: Promise<{ slug: string }> }) {

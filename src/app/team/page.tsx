@@ -46,9 +46,19 @@ const advisors = [
   },
 ]
 
-export const metadata = {
-  title: 'Our Team | Atamai',
-  description: 'Meet the team behind Atamai - making farm compliance simple for New Zealand farmers.',
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Our Team',
+  description:
+    'Meet the co-founders and advisors behind Atamai — the farmer-first compliance platform for New Zealand.',
+  alternates: { canonical: '/team' },
+  openGraph: {
+    title: 'Our Team | Atamai',
+    description:
+      'Meet the co-founders and advisors behind Atamai — the farmer-first compliance platform for New Zealand.',
+    url: '/team',
+  },
 }
 
 export default function TeamPage() {
