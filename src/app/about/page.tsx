@@ -2,9 +2,19 @@ import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import { ArrowRight } from 'lucide-react'
 
-export const metadata = {
-  title: 'About Atamai | Farmer-First Compliance Platform',
-  description: 'Learn how Atamai is transforming farm compliance from a burden into a business asset.',
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Atamai — Farmer-First Compliance Platform',
+  description:
+    'Learn how Atamai is transforming farm compliance from a burden into a business asset. One entry, many uses — reducing admin for NZ farmers.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Atamai — Farmer-First Compliance Platform',
+    description:
+      'Learn how Atamai is transforming farm compliance from a burden into a business asset.',
+    url: '/about',
+  },
 }
 
 export default function AboutPage() {

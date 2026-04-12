@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
+import JsonLd from '@/components/JsonLd'
+import { personSchema } from '@/lib/schemas'
 
 const team = [
   {
@@ -46,15 +48,36 @@ const advisors = [
   },
 ]
 
-export const metadata = {
-  title: 'Our Team | Atamai',
-  description: 'Meet the team behind Atamai - making farm compliance simple for New Zealand farmers.',
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Our Team',
+  description:
+    'Meet the co-founders and advisors behind Atamai — the farmer-first compliance platform for New Zealand.',
+  alternates: { canonical: '/team' },
+  openGraph: {
+    title: 'Our Team | Atamai',
+    description:
+      'Meet the co-founders and advisors behind Atamai — the farmer-first compliance platform for New Zealand.',
+    url: '/team',
+  },
 }
 
 export default function TeamPage() {
   return (
     <main className="min-h-screen bg-tint-light">
       <Navigation />
+      {team.map((member) => (
+        <JsonLd
+          key={member.name}
+          data={personSchema({
+            name: member.name,
+            jobTitle: member.role,
+            description: member.bio[0],
+            image: member.image,
+          })}
+        />
+      ))}
 
       {/* Hero */}
       <section className="container mx-auto px-6 pt-32 pb-16 text-center">

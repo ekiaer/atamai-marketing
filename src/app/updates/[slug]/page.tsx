@@ -4,6 +4,8 @@ import { marked } from 'marked'
 import { getAllUpdateSlugs, getUpdateBySlug } from '@/lib/updates'
 import { notFound } from 'next/navigation'
 import Navigation from '@/components/Navigation'
+import JsonLd from '@/components/JsonLd'
+import { articleSchema, faqPageSchema } from '@/lib/schemas'
 
 // Generate static paths for all updates
 export async function generateStaticParams() {
@@ -16,12 +18,32 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const update = getUpdateBySlug(slug)
   if (!update) {
-    return { title: 'Update Not Found | Atamai' }
+    return { title: 'Update Not Found' }
   }
-  return {
-    title: `${update.title} | Atamai Updates`,
+
+  const metadata: Record<string, unknown> = {
+    title: update.title,
     description: update.excerpt,
+    alternates: { canonical: `/updates/${slug}` },
+    openGraph: {
+      title: update.title,
+      description: update.excerpt,
+      type: 'article',
+      url: `/updates/${slug}`,
+      publishedTime: update.date,
+      ...(update.last_updated && { modifiedTime: update.last_updated }),
+      ...(update.author && { authors: [update.author] }),
+      ...(update.image && {
+        images: [{ url: update.image, alt: update.image_alt || update.title }],
+      }),
+    },
   }
+
+  if (update.tags?.length) {
+    metadata.keywords = update.tags
+  }
+
+  return metadata
 }
 
 export default async function UpdatePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -38,6 +60,8 @@ export default async function UpdatePage({ params }: { params: Promise<{ slug: s
   return (
     <main className="min-h-screen bg-tint-light">
       <Navigation />
+      <JsonLd data={articleSchema(update)} />
+      {update.faqs?.length ? <JsonLd data={faqPageSchema(update.faqs)} /> : null}
 
       <article className="max-w-3xl mx-auto px-6 pt-32 pb-20">
         <Link

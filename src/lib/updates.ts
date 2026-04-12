@@ -5,11 +5,22 @@ import matter from 'gray-matter'
 const updatesDirectory = path.join(process.cwd(), 'content/updates')
 
 export interface Update {
+  // Required (always present)
   slug: string
   title: string
   date: string
   excerpt: string
   content: string
+
+  // Extended (optional — for SEO/GEO, may be undefined on older posts)
+  author?: string
+  author_title?: string
+  last_updated?: string
+  canonical_url?: string
+  tags?: string[]
+  image?: string
+  image_alt?: string
+  faqs?: Array<{ question: string; answer: string }>
 }
 
 export function getAllUpdates(): Update[] {
@@ -33,6 +44,14 @@ export function getAllUpdates(): Update[] {
         date: data.date || '',
         excerpt: data.excerpt || '',
         content,
+        author: data.author,
+        author_title: data.author_title,
+        last_updated: data.last_updated,
+        canonical_url: data.canonical_url,
+        tags: data.tags,
+        image: data.image,
+        image_alt: data.image_alt,
+        faqs: data.faqs,
       }
     })
 
@@ -52,6 +71,14 @@ export function getUpdateBySlug(slug: string): Update | null {
       date: data.date || '',
       excerpt: data.excerpt || '',
       content,
+      author: data.author,
+      author_title: data.author_title,
+      last_updated: data.last_updated,
+      canonical_url: data.canonical_url,
+      tags: data.tags,
+      image: data.image,
+      image_alt: data.image_alt,
+      faqs: data.faqs,
     }
   } catch {
     return null

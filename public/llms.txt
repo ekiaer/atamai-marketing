@@ -1,0 +1,37 @@
+# Atamai — Farm Compliance Made Simple
+# https://www.atamaiag.com
+
+> Atamai is a farmer-first platform that transforms compliance from a burden into a business asset for New Zealand farmers.
+
+## What Atamai Does
+
+Atamai brings all farm compliance data into one place — the Farm Profile. Information captured once flows to multiple certifications, audits, and reports: NZFAP, freshwater farm plans, emissions reporting, and processor requirements. No more entering the same details into different systems.
+
+## Key Facts
+
+- Founded in New Zealand
+- Focus: farm compliance automation
+- Target users: New Zealand farmers (sheep, beef, dairy, arable)
+- Core principle: farmer-controlled data — you own your data, you authorize every use
+- 75+ farmer interviews conducted to shape the platform
+- Governance framework developed in partnership with AGMARDT
+
+## The Problem
+
+- NZ farmers spend 4–6% of farm revenue on compliance
+- 200+ hours/year managing audits, certifications, and paperwork
+- Same data entered 3–5 times across different standards
+- Farm information scattered across apps, spreadsheets, paper, and consultant reports
+
+## Pages
+
+- Home: https://www.atamaiag.com/
+- About: https://www.atamaiag.com/about/
+- Team: https://www.atamaiag.com/team/
+- Updates: https://www.atamaiag.com/updates/
+- Contact: https://www.atamaiag.com/contact/
+
+## Contact
+
+- Website: https://www.atamaiag.com
+- Contact form: https://www.atamaiag.com/contact/
