@@ -1,10 +1,10 @@
 ---
 title: "Who Owns Farm Data in New Zealand? (And What That Means for You)"
-date: "2026-04-09"
+date: "2026-04-26"
 excerpt: "In New Zealand, farm data ownership isn't settled by a single law — it's settled by the contracts you sign with every platform, processor, bank, and consultant who touches your data. Here's how it actually works, and what to look for."
 author: "Erik Kiaer"
 author_title: "Co-Founder, Atamai"
-last_updated: "2026-04-09"
+last_updated: "2026-04-26"
 canonical_url: "https://atamaiag.com/updates/who-owns-farm-data-in-new-zealand/"
 tags:
   - farm-data-ownership
@@ -36,7 +36,7 @@ faqs:
 
 **In New Zealand, farm data ownership is not settled by a single law — it is settled by the contracts you sign with every platform, processor, bank, and consultant who touches your data.** Most farmers assume that because they generated the data, they own it. The legal reality is messier than that, and the gap between "what feels true" and "what your contracts actually say" is where farmer leverage gets quietly lost. This post walks through how farm data ownership actually works in New Zealand, what the Privacy Act 2020 does and doesn't cover, where the Farm Data Code of Practice fits in, and the three things to look for in any farm software agreement before you sign it.
 
-*By Erik Kiaer, Co-Founder, Atamai — 9 April 2026*
+*By Erik Kiaer, Co-Founder, Atamai — 26 April 2026*
 
 ---
 
@@ -187,4 +187,4 @@ Erik Kiaer is co-founder of Atamai, a farm compliance and data platform for New 
 
 ---
 
-*This post is Version 1.0, published 9 April 2026. It will be updated as New Zealand's legal and regulatory landscape evolves — including a planned refresh on or shortly after 1 May 2026 when IPP 3A comes into force. If you spot something we have got wrong, or if you have a contract clause you would like a second opinion on, get in touch via the [contact page](/contact/).*
+*This post is Version 1.0, published 26 April 2026. It will be updated as New Zealand's legal and regulatory landscape evolves — including a planned refresh on or shortly after 1 May 2026 when IPP 3A comes into force. If you spot something we have got wrong, or if you have a contract clause you would like a second opinion on, get in touch via the [contact page](/contact/).*
