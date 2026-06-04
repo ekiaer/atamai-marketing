@@ -1,5 +1,5 @@
 ---
-title: "Know what your pasture will do next — and how you can help build it"
+title: "Know what your pasture will do next — we're looking for farmers to help build it"
 date: "2026-06-04"
 excerpt: "Paddock-level growth predictions, tuned to your farm and your own observations."
 author: "Erik Kiaer"
