@@ -44,7 +44,7 @@ export default function Home() {
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm">
             <span className="flex items-center gap-2 bg-mint-400/20 text-white font-bold uppercase tracking-wide px-3 py-1 rounded-full">
               <CheckCircle className="w-4 h-4 text-mint-400" />
-              NZFAP+ Ready
+              NZFAP Plus Ready
             </span>
             <span className="flex items-center gap-2 bg-mint-400/20 text-white font-bold uppercase tracking-wide px-3 py-1 rounded-full">
               <CheckCircle className="w-4 h-4 text-mint-400" />

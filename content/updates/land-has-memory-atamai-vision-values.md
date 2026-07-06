@@ -16,7 +16,7 @@ tags:
   - kaitiakitanga
 faqs:
   - question: "What is Atamai?"
-    answer: "Atamai is a farm compliance and data platform for New Zealand pasture-based farmers, starting with sheep and beef. It structures farm data for NZFAP+ certification, Farm Environment Plans, regional council reporting, and farmer-consented value-chain partnerships."
+    answer: "Atamai is a farm compliance and data platform for New Zealand pasture-based farmers, starting with sheep and beef. It structures farm data for NZFAP Plus certification, Farm Environment Plans, regional council reporting, and farmer-consented value-chain partnerships."
   - question: "Who owns the data I enter into Atamai?"
     answer: "The farmer owns their data. Atamai is a custodian, not an owner. Data can be exported in full at any time, and no data is shared with partners without the farmer's explicit, revocable consent."
   - question: "Does Atamai replace my farm management software?"
@@ -41,7 +41,7 @@ faqs:
 
 ## What Atamai Is, in One Paragraph
 
-Atamai is the compliance intelligence layer for New Zealand farms, starting with the pasture-based sector — sheep and beef first, with dairy, horticulture, viticulture, and the wider primary sector on our roadmap as the platform matures. Farmers enter data once — a winter grazing plan, a soil test, a fenced-waterway photo — for their own regulatory purpose, and the platform structures that data so it also works for NZFAP+ certification, Farm Environment Plans, regional council reporting, and (with the farmer's explicit consent) value-chain partners like processors, banks, and input suppliers. The farmer does the work once. Value flows in many directions. That's it.
+Atamai is the compliance intelligence layer for New Zealand farms, starting with the pasture-based sector — sheep and beef first, with dairy, horticulture, viticulture, and the wider primary sector on our roadmap as the platform matures. Farmers enter data once — a winter grazing plan, a soil test, a fenced-waterway photo — for their own regulatory purpose, and the platform structures that data so it also works for NZFAP Plus certification, Farm Environment Plans, regional council reporting, and (with the farmer's explicit consent) value-chain partners like processors, banks, and input suppliers. The farmer does the work once. Value flows in many directions. That's it.
 
 The name *Atamai* comes from te reo Māori, where it means **smart** or **intelligent**. We chose it because it carries a design constraint, not a marketing position: every feature we build should make it easier for a farmer to work *with* the land, not against it.
 
@@ -101,7 +101,7 @@ Clarity about what we *don't* do is as important as what we do.
 
 **Atamai is not a data broker.** We do not sell raw farmer data. We provide verified compliance intelligence through farmer-consented, structured, revocable partner connections.
 
-**Atamai is not a regulator.** We help farmers meet regulatory requirements, but we do not audit, certify, or enforce. Third-party certification bodies — NZFAI for NZFAP+, regional councils for Farm Environment Plans — retain their independent audit authority. We make their job easier by giving farmers an evidence trail that holds up. We do not take their place.
+**Atamai is not a regulator.** We help farmers meet regulatory requirements, but we do not audit, certify, or enforce. Third-party certification bodies — NZFAI for NZFAP Plus, regional councils for Farm Environment Plans — retain their independent audit authority. We make their job easier by giving farmers an evidence trail that holds up. We do not take their place.
 
 **Atamai is not a blockchain project.** Verification comes from structured data, source-authority tracking, and auditable provenance. The data model is ready for future cryptographic anchoring if the market ever demands it, but that's not a dependency and it's not the story.
 
@@ -118,7 +118,7 @@ If any of the above doesn't sit right with you, we'd rather you know now. And if
 ## Frequently Asked Questions
 
 **What is Atamai?**
-Atamai is a farm compliance and data platform for New Zealand pasture-based farmers, starting with sheep and beef. It structures farm data for NZFAP+ certification, Farm Environment Plans, regional council reporting, and farmer-consented value-chain partnerships.
+Atamai is a farm compliance and data platform for New Zealand pasture-based farmers, starting with sheep and beef. It structures farm data for NZFAP Plus certification, Farm Environment Plans, regional council reporting, and farmer-consented value-chain partnerships.
 
 **Who owns the data I enter into Atamai?**
 The farmer owns their data. Atamai is a custodian, not an owner. Data can be exported in full at any time, and no data is shared with partners without the farmer's explicit, revocable consent.

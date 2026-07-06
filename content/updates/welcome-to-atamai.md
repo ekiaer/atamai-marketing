@@ -10,7 +10,7 @@ We're excited to announce Atamai - a new platform designed to take the pain out 
 
 ## The Problem We're Solving
 
-Every farmer knows the frustration: you've already documented everything in your Farm Environment Plan, your records, your head. But when audit time comes, you're scrambling to prove compliance across NZFAP, NZFAP+, regional requirements, and more.
+Every farmer knows the frustration: you've already documented everything in your Farm Environment Plan, your records, your head. But when audit time comes, you're scrambling to prove compliance across NZFAP, NZFAP Plus, regional requirements, and more.
 
 It shouldn't take 80+ hours to prove what you already know.
 
