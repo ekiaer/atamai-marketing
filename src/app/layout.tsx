@@ -64,6 +64,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.atamaiag.com',
   },
+  verification: {
+    google: 'j8ULmIYNoSIf6tG_WB8bcc-2BPCmKrOzOMTfqApcffU',
+  },
 }
 
 export default function RootLayout({
