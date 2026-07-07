@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'farm compliance',
     'NZFAP',
     'NZFAP+',
+    'NZFAP Plus',
     'New Zealand farming',
     'farm certification',
     'FEP',
