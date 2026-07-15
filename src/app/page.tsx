@@ -421,8 +421,13 @@ export default function Home() {
                 Farm compliance, simplified.
               </span>
             </div>
-            <div className="text-cream-100/50 text-sm">
-              © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
+            <div className="flex items-center gap-4 text-cream-100/50 text-sm">
+              <a href="/privacy" className="hover:text-cream-100/80 transition-colors">
+                Privacy Policy
+              </a>
+              <span>
+                © {new Date().getFullYear()} Atamai. Built for New Zealand farmers.
+              </span>
             </div>
           </div>
         </div>
