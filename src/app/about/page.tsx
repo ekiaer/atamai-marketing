@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import { ArrowRight } from 'lucide-react'
 
 import type { Metadata } from 'next'
@@ -184,11 +185,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-forest-800 border-t border-forest-700 py-8">
-        <div className="container mx-auto px-6 text-center text-cream-100/50">
-          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
