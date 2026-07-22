@@ -5,6 +5,7 @@ import { getAllUpdateSlugs, getUpdateBySlug } from '@/lib/updates'
 import { notFound } from 'next/navigation'
 import Navigation from '@/components/Navigation'
 import JsonLd from '@/components/JsonLd'
+import Footer from '@/components/Footer'
 import { articleSchema, faqPageSchema } from '@/lib/schemas'
 
 // Generate static paths for all updates
@@ -120,11 +121,7 @@ export default async function UpdatePage({ params }: { params: Promise<{ slug: s
       </article>
 
       {/* Footer */}
-      <footer className="bg-forest-800 border-t border-forest-700 py-8">
-        <div className="container mx-auto px-6 text-center text-cream-100/50">
-          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }

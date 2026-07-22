@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Footer from '@/components/Footer'
 import { CheckCircle, ArrowLeft } from 'lucide-react'
 
 export default function ThankYou() {
@@ -58,6 +59,9 @@ export default function ThankYou() {
           Back to home
         </a>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </main>
   )
 }

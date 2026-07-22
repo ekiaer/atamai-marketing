@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import JsonLd from '@/components/JsonLd'
+import Footer from '@/components/Footer'
 import { personSchema } from '@/lib/schemas'
 
 const team = [
@@ -168,11 +169,7 @@ export default function TeamPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-forest-800 border-t border-forest-700 py-8">
-        <div className="container mx-auto px-6 text-center text-cream-100/50">
-          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }

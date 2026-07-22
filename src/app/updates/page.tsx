@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Calendar } from 'lucide-react'
 import { getAllUpdates } from '@/lib/updates'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Updates',
@@ -65,11 +66,7 @@ export default function UpdatesPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-forest-800 border-t border-forest-700 py-8">
-        <div className="container mx-auto px-6 text-center text-cream-100/50">
-          <p>&copy; {new Date().getFullYear()} Atamai. Built for New Zealand farmers.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
