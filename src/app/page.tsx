@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { FileText, Clock, Shield, Upload, CheckCircle, TrendingUp } from 'lucide-react'
 import Navigation from '@/components/Navigation'
+import HubSpotForm from '@/components/HubSpotForm'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -286,123 +287,10 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Netlify Form */}
-          <form
-            name="waitlist"
-            method="POST"
-            data-netlify="true"
-            action="/thank-you"
-            className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm-md"
-          >
-            <input type="hidden" name="form-name" value="waitlist" />
-
-            <div className="space-y-5">
-              <div>
-                <label htmlFor="name" className="block text-forest-800 text-sm font-medium mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="input-field"
-                  placeholder="John Smith"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-forest-800 text-sm font-medium mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="input-field"
-                  placeholder="john@farmname.co.nz"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="region" className="block text-forest-800 text-sm font-medium mb-2">
-                  Farm Region
-                </label>
-                <select
-                  id="region"
-                  name="region"
-                  required
-                  className="select-field"
-                >
-                  <option value="">Select your region</option>
-                  <option value="Northland">Northland</option>
-                  <option value="Auckland">Auckland</option>
-                  <option value="Waikato">Waikato</option>
-                  <option value="Bay of Plenty">Bay of Plenty</option>
-                  <option value="Gisborne">Gisborne</option>
-                  <option value="Hawke's Bay">Hawke's Bay</option>
-                  <option value="Taranaki">Taranaki</option>
-                  <option value="Manawatū-Whanganui">Manawatū-Whanganui</option>
-                  <option value="Wellington">Wellington</option>
-                  <option value="Tasman">Tasman</option>
-                  <option value="Nelson">Nelson</option>
-                  <option value="Marlborough">Marlborough</option>
-                  <option value="West Coast">West Coast</option>
-                  <option value="Canterbury">Canterbury</option>
-                  <option value="Otago">Otago</option>
-                  <option value="Southland">Southland</option>
-                  <option value="Outside NZ">Outside New Zealand</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="farm_type" className="block text-forest-800 text-sm font-medium mb-2">
-                  Farm Type
-                </label>
-                <select
-                  id="farm_type"
-                  name="farm_type"
-                  required
-                  className="select-field"
-                >
-                  <option value="">Select farm type</option>
-                  <option value="Sheep & Beef - Breeding">Sheep & Beef - Breeding</option>
-                  <option value="Sheep & Beef - Finishing">Sheep & Beef - Finishing</option>
-                  <option value="Sheep & Beef - Mixed">Sheep & Beef - Mixed</option>
-                  <option value="Dairy">Dairy</option>
-                  <option value="Dairy Support">Dairy Support</option>
-                  <option value="Deer">Deer</option>
-                  <option value="Arable">Arable</option>
-                  <option value="Mixed/Other">Mixed/Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="challenge" className="block text-forest-800 text-sm font-medium mb-2">
-                  Biggest Compliance Challenge (Optional)
-                </label>
-                <textarea
-                  id="challenge"
-                  name="challenge"
-                  rows={3}
-                  className="input-field resize-none"
-                  placeholder="What frustrates you most about compliance paperwork?"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full btn-primary text-lg py-4"
-              >
-                Join the Waitlist
-              </button>
-
-              <p className="text-neutral-500 text-sm text-center">
-                We respect your privacy. No spam, ever.
-              </p>
-            </div>
-          </form>
+          {/* HubSpot embedded form (Netlify form retired at Phase 2 go-live) */}
+          <div className="bg-white rounded-lg p-8 border border-neutral-200 shadow-warm-md">
+            <HubSpotForm formId="6ca68060-02f7-4d8e-aef1-5164f40c09b6" />
+          </div>
         </div>
       </section>
 

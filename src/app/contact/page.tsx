@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import HubSpotForm from '@/components/HubSpotForm'
 import Footer from '@/components/Footer'
 import { Mail } from 'lucide-react'
 
@@ -38,94 +39,10 @@ export default function ContactPage() {
       {/* Contact Form */}
       <section className="container mx-auto px-6 pb-24">
         <div className="max-w-xl mx-auto">
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/contact/thank-you/"
-            className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-warm"
-          >
-            {/* Hidden field for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
-
-            {/* Honeypot field for spam protection */}
-            <p className="hidden">
-              <label>
-                Don't fill this out: <input name="bot-field" />
-              </label>
-            </p>
-
-            <div className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-forest-800 font-medium mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="input-field"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-forest-800 font-medium mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="input-field"
-                  placeholder="your@email.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-forest-800 font-medium mb-2">
-                  Subject
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  required
-                  className="select-field"
-                >
-                  <option value="">Select a topic...</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="press">Press & Media</option>
-                  <option value="support">Support</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-forest-800 font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  className="input-field resize-none"
-                  placeholder="How can we help you?"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="btn-primary w-full"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          {/* HubSpot embedded form (Netlify form retired at Phase 2 go-live) */}
+          <div className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-warm">
+            <HubSpotForm formId="ad2a00fd-e6ae-4d63-8976-45d6b868de95" />
+          </div>
 
           <p className="text-center text-neutral-500 text-sm mt-6">
             We typically respond within 1-2 business days.
