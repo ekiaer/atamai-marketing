@@ -12,7 +12,7 @@ tags:
   - nz-sheep-and-beef
 ---
 
-Woolgen NZ Limited has been awarded a New to R&D Grant to support research and development on Atamai, our farm compliance and intelligence platform for New Zealand sheep and beef farmers.
+Woolgen NZ Limited has been awarded a New to R&D Grant to support research and development on Atamai, our farm compliance and intelligence platform for New Zealand farmers.
 
 The grant co-funds our R&D alongside our own investors, and it also funds something less obvious: building the capability to do research properly, with the discipline and record-keeping that goes with it. For a small team, that matters as much as the money.
 
